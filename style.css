@@ -1,0 +1,1047 @@
+@font-face{
+    font-family: 'bold';
+    src:url(Font/SpotifyMixUI-Bold.woff2);
+}
+@font-face{
+    font-family: 'regular';
+    src: url(Font/SpotifyMixUI-Regular.woff2);
+}
+@font-face{
+    font-family: 'title';
+    src: url(Font/SpotifyMixUITitleVariable.woff2);
+}
+
+
+
+*{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+
+    
+}
+body, html{
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+    color: #b3b3b3;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.spotify2{
+    display: none;
+}
+.openapps{display: none;}
+.centre{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    
+}
+.menu{
+    display: flex;
+    width: 100%;
+    max-width: 475px;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 98px;
+    padding: 5px 10px;
+    background: #303030;
+
+}
+.searchs{
+    width: 25px;
+    background: #303030;
+    margin-right: 9px;
+
+}
+.centre svg{
+    background: #303030;
+
+}
+.home{
+    margin-left: -5px;
+    width: 24px;
+    border: 2px solid transparent;
+    padding: 6px 9px;
+    border-radius: 55%;
+    background: #303030;
+   
+    
+}
+.menubar input::placeholder{
+    font-size: 16px;
+    font-family: 'bold';
+    color:gray;
+    
+}
+.menubar input{
+    background: #303030;
+    border: none;}
+.menubar{background: #303030;}
+
+.backet{
+    background: #303030;
+    width: 28px;
+   
+}
+.backet svg{
+    margin-left: -10px;
+    margin-top: 2px;
+}
+
+.aside{
+    display: none;
+    
+    
+}
+.spotify {
+    width: 70px;
+    margin-right: 32%;
+    margin-left: 26px;
+    margin-top: 4px;
+    
+    
+}
+.search{
+    width: 40px;
+}
+.threelines{
+    width: 50px;
+    
+}
+.mainbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 180px;
+    margin-right: 32px;
+}
+.mainbar a{
+    text-decoration: none;
+}
+.log {
+    border: 2px solid ;
+    text-align: center;
+    border-radius: 888px;
+    background: white;
+    padding: 11px 16px;
+    
+    }
+.log a{
+    background: white;
+    color: black;
+    font-family: 'bold';
+    
+}
+.sign a{
+    font-family: 'bold';
+    color: grey;
+    font-size: 16px;
+    margin-left: -16px;
+}
+
+
+
+
+
+
+/*sidebar*/
+.lineicon{
+    width: 26px;
+    background:rgb(19, 18, 18);
+  
+}
+.lineicon svg{
+    background:rgb(19, 18, 18);
+}
+.plusicon{
+    width: 17px;
+    background:rgb(19, 18, 18);
+    
+}
+.plusicon svg{
+    background:rgb(19, 18, 18);
+    
+}
+.inputtext{
+    background:rgb(19, 18, 18);
+}
+.yourlibrary{
+    display: flex;
+    align-items: center;
+    background:rgb(19, 18, 18);
+    
+}
+.inputtext ::placeholder{
+    color: #b3b3b3;
+    font-family: 'regular';
+    font-size: 16px;
+    font-weight: 900;
+    background:rgb(19, 18, 18);
+    border: none;
+    letter-spacing: normal;
+
+}
+.inputtext input{
+    border: none;
+    margin-left: 12px;
+    background:rgb(19, 18, 18);
+}
+.library{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 372px;
+    margin-left: 3px;
+    margin-bottom: 21px;
+    padding: 10px;
+    background:rgb(19, 18, 18);
+    margin-top: -4px;
+    
+    
+}
+.firstplaylist{
+    display: flex;
+    flex-direction: column;
+    width: 357px;
+    text-align: left;
+    border: 2px solid transparent;
+    padding: 20px 20px 13px 20px;
+    margin-bottom: 25px;
+    background-position: fixed;
+    background: rgb(43, 42, 42);
+    border-radius: 9px;
+    
+}
+.totalsection h3,.totalsection p{
+    background: rgb(43, 42, 42);
+}
+.totalsection h3{
+    font-family: 'bold';
+    font-size: 16px;
+    margin-bottom: 5px;
+} 
+.totalsection p{
+    font-family: 'regular';
+    font-size: 14px;
+}
+.podcast{
+    display: flex;
+    flex-direction: column;
+    width: 357px;
+    text-align: left;
+    border: 2px solid transparent;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 10px;
+    background-position: fixed;
+    background: rgb(43, 42, 42);
+    border-radius: 9px;
+}
+
+.totalsection button{
+    width: 100%;
+    max-width: fit-content;
+    border: none;
+    border: 2px solid white;
+    padding: 5px 15px;
+    color: black;
+    background: white;
+    border-radius: 888px;
+    margin-top: 20px;
+    font-family: 'bold';
+}
+.global{
+    width: 20px;
+    align-items: center;
+    background:rgb(19, 18, 18);
+}
+.global svg{background:rgb(19, 18, 18);
+    align-items: center;
+    margin-top: 5px;
+    
+}
+.eng{
+    margin-left: 4px;
+    font-family: 'bold';
+    font-size: 14px;
+    align-items: center;
+}
+.globalenglish{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0.2px solid grey;
+    width: max-content;
+    padding: 5px 16px;
+    border-radius: 888px;
+    background:rgb(19, 18, 18);
+    margin-top: 20px;
+}
+.globalenglish >div{
+    background:rgb(19, 18, 18);
+}
+.baselist{
+    padding: 1px 1px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background:rgb(19, 18, 18);
+    
+    
+}
+.legal >div{
+    background:rgb(19, 18, 18);
+}
+
+.legal{
+    font-family: 'regular';
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    background:rgb(19, 18, 18);
+   
+}
+
+.ads{
+    font-family: 'regular';
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    background:rgb(19, 18, 18);
+}
+.ads >div{
+    background:rgb(19, 18, 18);
+}
+.cookies >div{
+    font-family: 'regular';
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    background:rgb(19, 18, 18);
+    background:rgb(19, 18, 18);
+}
+.firstsection{
+    display: flex;
+    flex-direction: column;
+    background:rgb(19, 18, 18);
+}
+.totalsection{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 29px 15px 7px;
+    margin-top: -10px;
+    bottom: 0;
+    height: 82vh;
+    border-radius: 9px;
+    border: 2px solid transparent;
+    background:rgb(19, 18, 18);
+    width: 379px;
+}
+
+
+
+
+
+
+
+
+
+.sidebar{
+    display: flex;
+    padding: 10px;
+    
+   
+}
+
+.scrollpart >div{
+    background:rgb(19, 18, 18);
+}
+.scrollpart h2{background:rgb(19, 18, 18);}
+
+.scrollpart h4{background:rgb(19, 18, 18);}
+.scrollpart img{background:rgb(19, 18, 18);}
+
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    background:rgb(19, 18, 18);
+}
+.artist img{
+    width: 160px;
+    height: 15vh;
+    background:rgb(19, 18, 18);
+    
+   
+}
+.Trending >div{background:rgb(19, 18, 18);}
+.plalist >div{background:rgb(19, 18, 18);}
+.radio >div{background:rgb(19, 18, 18);}
+.album img{background:rgb(19, 18, 18);}
+.album >div{background:rgb(19, 18, 18);}
+.artist >div{
+    background:rgb(19, 18, 18);
+}
+.popular >div{
+    background:rgb(19, 18, 18);
+}
+.charts >div{background:rgb(19, 18, 18);}
+.artist{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+   overflow: hidden;
+}
+.album img{
+    width: 160px;
+    height: 15vh;
+}
+.album{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+    
+    
+}
+.radios h2{
+    margin-top: 40px;
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+}
+.radio img{
+    width: 160px;
+    height: 15vh;
+}
+.charts img{
+    width: 180px;
+    height: 15vh;
+}
+.charts{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+.plalist{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+}
+.plalist img{
+    width: 160px;
+    height: 15vh;
+}
+.Trending{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+}
+.Trending img{
+    width: 180px;
+    height: 15vh;
+}
+.popular h4{
+    font-size: 14px;
+    font-family: 'regular';
+    background:rgb(19, 18, 18) ;
+}
+.popular img{
+    background:rgb(19, 18, 18)
+}
+.popular{
+    background:rgb(19, 18, 18)
+}
+.popular h2{
+    font-size: 24px;
+    font-family: 'bold';
+    padding-bottom: 20px;
+}
+.popular p{
+    font-family: 'regular';
+    width: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+
+footer{
+     
+    background: linear-gradient(to right, #cf1698, rgb(121, 121, 216));
+    padding: 10px;
+    
+}
+footer .preview{
+    background: linear-gradient(to right, #cf1698, rgb(121, 121, 216));
+}
+.footer{
+    height:auto ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 3800px;
+    color: white; 
+    background: linear-gradient(to right, #6616cf, rgb(121, 121, 216));
+    
+    
+}
+.preview{
+    width: 850%;
+}
+footer{
+    margin-top: 0%;
+    margin-left: 9px;
+    width: 99%;
+    
+}
+.footer button{
+    width: 100%;
+    max-width: max-content;
+    justify-content: right;
+    border: 2px solid white;
+    padding: 8px 25px;
+    border-radius: 98px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-family: 'bold';
+    margin: auto 10px;
+
+}
+    
+footer p{
+    font-family: 'regular';
+    font-size: 16px;
+    background: linear-gradient(to right, #cf1698, rgb(121, 121, 216));
+}          
+footer h3{
+    font-size: 14px;
+    font-family: 'bold';
+    background: linear-gradient(to right, #cf1698, rgb(121, 121, 216));
+}
+footer button{
+   
+    
+    font-size: 18px;
+    
+}
+.button{
+    background: rgb(121, 121, 216); 
+}
+.base{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    background:rgb(19, 18, 18);
+    padding: 10px;
+
+ }
+ .Company h3{
+    font-family: 'bold';
+    font-size: 16px;
+ }
+ .Company a{
+    font-family: 'regular';
+    font-size: 14px;
+ }
+ .Company{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background:rgb(19, 18, 18);
+
+ }
+ .Company h3, .Company a{
+    background:rgb(19, 18, 18);
+
+ }
+ .Company a{
+    text-decoration: none;
+ }
+ .social{
+    background:rgb(19, 18, 18);
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    
+ }
+ .social svg{
+    width: 20px;
+    gap: 8px;
+    border: 2px solid transparent;
+    padding: 5px 5px;
+    border-radius: 55%;
+    background: #303030;
+    margin-right: 2px;
+    margin-left: 2px;
+
+ }
+ .social >div{
+    background:rgb(19, 18, 18);
+    
+
+ }
+.social svg:nth-child(1){
+    background: #303030;
+}
+.popular p{
+    background:rgb(19, 18, 18);
+    font-size:13px ;
+    font-family: 'regular';
+    padding-top: 10px;
+}
+
+
+/*min 1200px mediaqueries*/
+
+@media(max-width:1520px){
+    .footer{
+        max-width: 100px;
+    }
+    .preview{
+        width: 500%;
+    }
+}
+
+@media(max-width:1700px){
+    .footer{
+        max-width: 1600px;
+    }
+}
+@media(max-width:1244px){
+    .menu{
+        max-width: 380px;
+    }
+}
+@media(max-width:1073px){
+    .menu{
+        max-width:330px;
+    }
+}
+@media(min-width:990px){
+    .scrollpart{
+        overflow-x: hidden;
+    }
+     .artist img{
+        border: 2px solid transparent;
+        border-radius: 50%;
+        height: 21vh;
+        width: 205px;
+        overflow-x: hidden;
+        margin-left: -1%;
+        margin-top: 5px;
+        
+     }
+     
+     .artist{
+        gap: 20px;
+        
+     }
+     .album img{
+        border: 2px solid transparent;
+        
+        width: 205px;
+
+     }
+     .album{
+        gap: 22px;
+        
+        
+     }
+     .radio img{
+        border: 2px solid transparent;
+        height: 20vh;
+        width: 200px;
+
+     }
+     .radio{
+        gap: 22px;
+     }
+     .charts img{
+        border: 2px solid transparent;
+        height: 20vh;
+        width: 200px;
+     }
+     .plalist img{
+        border: 2px solid transparent;
+        height: 20vh;
+        width: 200px;
+     }
+     .plalist{
+        gap: 21px;
+     }
+     .Trending img{
+        border: 2px solid;
+        height: 20vh;
+        width: 200px;
+     }
+     .Trending{
+        gap: 20px;
+     }
+     .popular h2{
+        font-family: 'bold';
+        padding-top: 10px;
+
+     }
+     .album img{
+        border: 2px solid transparent;
+        height: 21.5vh;
+        border-radius: 9px;
+     }
+     .albums h2{
+        margin-top: -50px;
+     }
+     .popular h4{
+        font-family: 'regular';
+        font-weight: 100;
+        font-size: 16px;
+        width: 200px;
+        text-align: left;
+        overflow:hidden ;
+        overflow-wrap: break-word;
+        background:rgb(19, 18, 18);
+     }
+     .artist{
+        margin-bottom: 85px;
+     }
+     .popular p{
+        display: flex;
+        color: grey;
+        overflow-x: hidden;
+     }
+     .radio h4{
+        display: none;
+     }
+     .charts h4{
+        display: none;
+     }
+     .plalist h4{
+        display: none;
+     }
+     .scrollpart{
+        margin-left: 10px;
+        margin-top: -10px;
+        margin-bottom: 2px;
+        background:rgb(19, 18, 18);
+        top: 0;
+        bottom: 0;
+        height: 82.5vh;
+        border-radius: 9px;
+        border: 2px solid transparent;
+        background:rgb(19, 18, 18);
+        padding: 12px 1px 7px 20px;
+        border-radius: 9px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        overflow-y: auto;
+        white-space: nowrap;
+        scroll-snap-type:y mandatory;
+        scroll-behavior: smooth;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .charts{
+        overflow-x: hidden;
+        
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .cook{
+        margin-left: -0px;
+    }
+    .leg{
+        margin-right: -50px;
+    }
+    .about{
+        margin-right: -55%;
+    }
+    .legal{
+        padding-bottom: 20px;
+    }
+    .ads{
+        padding-bottom: 20px;
+    }
+    .cookies{
+        padding-bottom: 20px;
+        background:rgb(19, 18, 18);
+    }
+    .hiddenfooter{display: none;}
+
+    .social{
+        gap: 20px;
+    }
+
+
+
+
+
+}
+@media(max-width:1100px){
+    .base{
+        gap: 0;
+        overflow-x: hidden;
+    }
+    .Company{
+        gap: 0;
+        overflow-x: hidden;
+    }
+}
+@media(max-width:990px){
+    .centre{
+        display:none;
+    }
+    .mainbar{
+        display: none;
+    }
+    .search{
+        width: 15px;
+    }
+    .popular p{
+        display:none
+    }
+    .aside{
+        display: flex;
+        align-items: center;
+        margin-left: 35%;
+        max-width: none;
+        justify-content: end;
+    }
+    .threelines{
+        margin-right: 20px;
+        width: 22px;
+    }
+    .openapp{
+        max-width: max-content;
+        border: 2px solid white;
+        text-align: center;
+        padding: 4px 4px 4px 4px;
+        border-radius: 988px;
+        background: white;
+        margin-left: 10px;
+        margin-right: 10px;
+       
+        
+    }
+   .openapp a{text-decoration: none;
+    background: white;
+    color: black;
+    font-size: 14px;
+    font-family: 'bold';
+}
+.totalsection{
+    display: none;
+}
+footer{
+    display: none;
+}
+.artist{
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.album{
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.radio{
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.charts{overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;}
+
+
+.plalist{
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.Trending{overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;}
+    .popular h4{
+        overflow: hidden;
+        width: 170px;
+    }
+    .plalist h4{
+        display: flex;
+    }
+    .plalist p{
+        display: none;
+    }
+    .scrollpart{
+        margin:0;
+        background:rgb(19, 18, 18);
+        top: 0;
+        bottom: 0;
+    }
+    .popular{
+        padding: 20px;
+    }
+    .popular img{
+        width: 100%;
+        height: 15vh;
+    }
+    .spotify{
+        width: 110px;
+        margin-left: 40px;
+    }
+    .base{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        
+    }
+    .Company{
+        gap: 12px;
+    }
+    .social{
+        gap: 20px;
+    }
+    .hiddenfooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        padding:20px;
+    }
+    .hiddenfooter a{
+        margin-right: 2px;
+        width: 100%;
+        font-size: 12px;
+        font-family: 'regular';
+        text-decoration: none;
+    }
+    .subfooter a{
+        margin-left: 70%;
+    }
+    .globalenglish{
+        display: none;
+    }
+    .body{
+        margin: 0;
+        padding: 0;
+    }
+    .scrollpart{
+        margin: 0;
+        margin-left: -1%;
+    }
+}
+@media(max-width:770px){
+    .base{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .hiddenfooter{
+        margin: o;
+        display: grid;
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
+    .subfooter a{
+        margin: 0;
+    }
+    .globalenglish{
+        display: flex;
+    }
+}
+@media(max-width:700px){
+    .spotify{
+        width: 80px;
+    }
+    .aside{
+        margin-left: -20px;
+    }
+}
+@media(max-width:368px){
+    .spotify{display: none;}
+
+.spotify2{
+    display: flex;
+}
+.openapp{
+    display: none;
+}
+.openapps{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    width: fit-content;
+    padding: 6px;
+    border-radius: 98px;
+    color: black;
+    background: white;
+    margin-top: -50%;
+}
+.openapps >div{
+    background: white;
+    color: black;
+    font-family: 'bold';
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+.aside{
+    margin: 0;
+    padding: 0;
+}
+}
+@media(max-width:276px){
+    .aside{
+        margin-right: -20px;
+        overflow-x: hidden;
+    }
+    
+}
+@media(max-width:192px){
+    .aside{display: none;}
+}
